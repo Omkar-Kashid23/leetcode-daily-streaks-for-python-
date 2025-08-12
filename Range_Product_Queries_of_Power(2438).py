@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 MOD = 10**9 + 7
 
+=======
+>>>>>>> 163ad7b648ffdac927109e2d44b7eb9272981358
 class Solution(object):
     def productQueries(self, n, queries):
         """
@@ -15,7 +18,12 @@ class Solution(object):
             lst.append(m)
             n -= m
         lst.sort()
+<<<<<<< HEAD
         dp=[[0]*k for _ in range(k)]
+=======
+        k=len(lst)
+        MOD=10**9+7
+>>>>>>> 163ad7b648ffdac927109e2d44b7eb9272981358
         dp=[[0]*k for  _ in range(k)]
         for i in range(k):
             dp[i][i]=lst[i]
@@ -25,4 +33,8 @@ class Solution(object):
         ans=[]
         for a,b in queries:
             ans.append(dp[a][b])
+<<<<<<< HEAD
         return ans
+=======
+        return ans
+>>>>>>> 163ad7b648ffdac927109e2d44b7eb9272981358
