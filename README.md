@@ -1,1 +1,1 @@
-# leetcode-daily-streaks-for-python-
+# leetcode-daily-streaks-for-python
