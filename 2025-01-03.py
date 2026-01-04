@@ -1,6 +1,9 @@
-from collections import Counter
 class Solution:
-    def repeatedNTimes(self, nums: List[int]) -> int:
-        most_common_value = Counter(nums).most_common(1)[0][0]
-        return most_common_value
-        
+    def numOfWays(self, n: int) -> int:
+        mod = 1000000007
+        x,y = 6 ,6
+        for i in range(2,n+1):
+            new_x = (3 * x + 2 * y) % mod
+            new_y = (2 * x + 2 * y) % mod
+            x,y = new_x, new_y
+        return (x+y) % mod
