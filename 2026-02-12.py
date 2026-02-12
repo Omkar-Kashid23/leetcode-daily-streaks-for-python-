@@ -14,5 +14,4 @@ class Solution:
                 
                 if (rght + 1) % unique != 0 or len(set(ctr) - {0}) != 1: continue 
                 if rght > ans: ans = rght
-
         return ans + 1
