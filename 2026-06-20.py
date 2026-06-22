@@ -18,4 +18,4 @@ class Solution:
             dist = id2-id1
             max_height = (dist+h1+h2) // 2
             ans = max(ans, max_height)
-        return ans
+        return ans                          
